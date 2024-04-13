@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\CookBook.cs" />
     <Compile Include="Classes\Recipe.cs" />
+    <Compile Include="Classes\RecipeManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
