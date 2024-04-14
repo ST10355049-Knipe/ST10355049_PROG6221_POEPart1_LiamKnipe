@@ -56,6 +56,15 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.WriteLine("6. Exit");
             Console.Write("Please enter your choice (1-6): ");
         }
+        private double GetDoubleInput()
+        {
+            double value;
+            while (!double.TryParse(Console.ReadLine(), out value) || value < 0)
+            {
+                Console.Write("Invalid input. Please enter a positive number: ");
+            }
+            return value;
+        }
         private void ClearConsole()
         {
             Console.Clear();
