@@ -9,7 +9,7 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
     internal class Ingredient
     {
         public string Name { get; }
-        public double Quantity { get; }
+        public double Quantity { get; set; }
         public string UnitOfMeasurement { get; }
       
         public Ingredient(string name, double quantity, string unitOfMeasurement)

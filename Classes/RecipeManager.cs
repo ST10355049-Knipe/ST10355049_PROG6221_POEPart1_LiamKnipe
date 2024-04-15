@@ -40,6 +40,7 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
                         return;
                     default:
                         Console.WriteLine("Invalid Choice, please try again.");
+                        ClearConsole();
                         break;
                 }
             }
@@ -47,6 +48,7 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
         
         private void DisplayMenu()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Recipe Manager");
             Console.WriteLine("1. Add Recipe");
             Console.WriteLine("2. View Recipe");
@@ -55,6 +57,16 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.WriteLine("5. Clear Recipe");
             Console.WriteLine("6. Exit");
             Console.Write("Please enter your choice (1-6): ");
+        }
+
+        private int GetUserChoice()
+        {
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 6)
+            {
+                Console.Write("Invalid choice. Please enter a number between 1 and 6: ");
+            }
+            return choice;
         }
         private int GetIntInput()
         {
