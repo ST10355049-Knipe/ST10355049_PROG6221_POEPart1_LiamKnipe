@@ -95,6 +95,11 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
                 Console.Write($"Step {i + 1}: ");
                 steps[i] = Console.ReadLine();
             }
+            currentRecipe = new Recipe(ingredients, steps);
+            factorScale = 1;
+            Console.WriteLine("Recipe added successfully.");
+            Console.WriteLine();
+        }
         private int GetIntInput()
         {
             int value;
