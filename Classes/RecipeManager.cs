@@ -86,6 +86,15 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
                 string Unit = Console.ReadLine();
                 ingredients[i] = new Ingredient(Name, Quantity, Unit);
             }
+            Console.Write("Enter the number of steps: ");
+            int numSteps = GetIntInput();
+
+            var steps = new string[numSteps];
+            for (int i = 0; i < numSteps; i++)
+            {
+                Console.Write($"Step {i + 1}: ");
+                steps[i] = Console.ReadLine();
+            }
         private int GetIntInput()
         {
             int value;
