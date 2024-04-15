@@ -68,6 +68,24 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             }
             return choice;
         }
+
+        private void AddRecipe()
+        {
+            Console.Write("Enter the number of ingredients: ");
+            int numIngredients = GetIntInput();
+
+            var ingredients = new Ingredient[numIngredients];
+            for (int i = 0; i < numIngredients; i++)
+            {
+                Console.WriteLine($"Ingredient {i + 1}: ");
+                Console.Write("Name: ");
+                string Name = Console.ReadLine();
+                Console.Write("Quantity: ");
+                double Quantity = GetDoubleInput();
+                Console.Write("Unit of measurement: ");
+                string Unit = Console.ReadLine();
+                ingredients[i] = new Ingredient(Name, Quantity, Unit);
+            }
         private int GetIntInput()
         {
             int value;
