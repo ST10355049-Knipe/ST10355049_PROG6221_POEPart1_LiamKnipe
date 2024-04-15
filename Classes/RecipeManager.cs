@@ -100,6 +100,12 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.WriteLine("Recipe added successfully.");
             Console.WriteLine();
         }
+        private void ResetScale()
+        {
+            factorScale = 1;
+            Console.WriteLine("Scale reset to 1.");
+            Console.WriteLine();
+        }
         private int GetIntInput()
         {
             int value;
