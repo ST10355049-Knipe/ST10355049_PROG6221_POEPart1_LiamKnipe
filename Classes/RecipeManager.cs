@@ -106,6 +106,23 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.WriteLine("Scale reset to 1.");
             Console.WriteLine();
         }
+        private void ClearRecipe()
+        {
+            Console.Write("Are you sure you want to clear the recipe? (y/n) ");
+            string confirm = Console.ReadLine().ToLower();
+            if (confirm == "y")
+            {
+                currentRecipe = null;
+                factorScale = 1;
+                Console.WriteLine("Recipe cleared.");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("Recipe not cleared.");
+                Console.WriteLine();
+            }
+        }
         private int GetIntInput()
         {
             int value;
