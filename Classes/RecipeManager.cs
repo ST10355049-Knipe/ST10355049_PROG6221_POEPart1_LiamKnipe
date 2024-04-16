@@ -114,6 +114,24 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Ingredients:");
             Console.ResetColor();
+            foreach (var ingredient in currentRecipe.Ingredients)
+            {
+                Console.WriteLine($" {ingredient.Quantity * factorScale} {ingredient.UnitOfMeasurement} {ingredient.Name}");
+            }
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Steps:");
+            Console.ResetColor();
+            for (int i = 0; i < currentRecipe.Steps.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {currentRecipe.Steps[i]}");
+            }
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Factor Scale: {factorScale}");
+            Console.ResetColor();
+            Console.WriteLine();
+        }
         private void ResetScale()
         {
             factorScale = 1;
