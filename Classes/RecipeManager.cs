@@ -132,6 +132,43 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.ResetColor();
             Console.WriteLine();
         }
+       private void ScaleRecipe()
+        {
+            if (currentRecipe == null)
+            {
+                Console.WriteLine("No recipe available.");
+                    return;
+            }
+
+            Console.WriteLine("Select a scale factor:");
+            Console.WriteLine("1. 0.5");
+            Console.WriteLine("2. 2");
+            Console.WriteLine("3. 3");
+            Console.Write("Enter your choice (1-3): ");
+
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 3)
+            {
+                Console.WriteLine("Invalid choice. Please enter a number between 1 and 3.");
+            }
+
+            switch (choice)
+            {
+                case 1:
+                    factorScale *= 0.5;
+                    break;
+                case 2:
+                    factorScale *= 2;
+                    break;
+                case 3:
+                    factorScale *= 3;
+                    break;
+            }
+
+            Console.WriteLine("Recipe successfully scaled.");
+            Console.WriteLine();
+        }
+
         private void ResetScale()
         {
             factorScale = 1;
