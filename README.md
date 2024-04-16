@@ -43,4 +43,4 @@ The application is structured using the following classes:
 
 The *RecipeManager* class is responsible for the core functionality of the application, including adding recipes, viewing recipes, scaling recipes, resetting the scale and clearing recipes.
 
-## Repository Link: 
+## Repository Link: https://github.com/ST10355049-Knipe/ST10355049_PROG6221_POEPart1_LiamKnipe
