@@ -100,6 +100,13 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             Console.WriteLine("Recipe added successfully.");
             Console.WriteLine();
         }
+        private void ViewRecipe()
+        {
+            if (currentRecipe == null)
+            {
+                Console.WriteLine("No recipe available.");
+                return;
+            }
         private void ResetScale()
         {
             factorScale = 1;
