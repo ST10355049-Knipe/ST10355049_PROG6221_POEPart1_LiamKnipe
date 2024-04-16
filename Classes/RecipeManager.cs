@@ -117,6 +117,20 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
             foreach (var ingredient in currentRecipe.Ingredients)
             {
                 Console.WriteLine($" {ingredient.Quantity * factorScale} {ingredient.UnitOfMeasurement} {ingredient.Name}");
+                double scaledQuantity = ingredient.Quantity * factorScale;
+                string unit = ingredient.UnitOfMeasurement;
+                if (unit == "tablespoon" && scaledQuantity >= 16)
+                {
+                    scaledQuantity /= 16;
+                    unit = "cup";
+                }
+                else if (unit == "teaspoon" && scaledQuantity >= 3)
+                {
+                    scaledQuantity /= 3;
+                    unit = "tablespoon";
+                }
+
+                Console.WriteLine($" {scaledQuantity} {unit} {ingredient.Name}");
             }
 
             Console.ForegroundColor = ConsoleColor.Yellow;
