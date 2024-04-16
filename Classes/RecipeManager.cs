@@ -107,6 +107,13 @@ namespace ST10355049_PROG6221_POEPart1_LiamKnipe.Classes
                 Console.WriteLine("No recipe available.");
                 return;
             }
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("RECIPE:");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Ingredients:");
+            Console.ResetColor();
         private void ResetScale()
         {
             factorScale = 1;
