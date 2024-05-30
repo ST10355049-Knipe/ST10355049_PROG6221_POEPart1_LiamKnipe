@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST10355049_PROG6221_POEPart1_LiamKnipe", "ST10355049_PROG6221_POEPart1_LiamKnipe.csproj", "{A275B7C8-4058-4857-958D-4A619BA5AAB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST10355049_PROG6221_POEPart2_LiamKnipe", "ST10355049_PROG6221_POEPart2_LiamKnipe.csproj", "{A275B7C8-4058-4857-958D-4A619BA5AAB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
