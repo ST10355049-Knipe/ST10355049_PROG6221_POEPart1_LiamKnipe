@@ -1,4 +1,12 @@
-﻿using System;
+﻿//PROG6221-POE Part 2 Liam Knipe ST10355049
+// References: https://csharpindepth.com/articles/Events , https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events
+// References: https://learn.microsoft.com/en-us/dotnet/standard/events/ , https://www.c-sharpcorner.com/blogs/delegateinc-sharp-in-a-simple-way
+// References: https://stackify.com/csharp-exception-handling-best-practices/ , https://www.geeksforgeeks.org/c-sharp-program-to-sort-a-list-of-string-names-using-the-linq-orderby-method/
+// References: https://stackoverflow.com/questions/188141/listt-orderby-alphabetical-order , https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.sort?view=net-8.0
+// References: https://www.dofactory.com/code-examples/csharp/sort-list-by-property#:~:text=by%20object%20property-,How%20to%20sort%20a%20C%23%20List%20by%20a%20property,var%20sortedList%20%3D%20orders.
+// References: https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//PROG6221-POE Part 2 Liam Knipe ST10355049
+// References: https://learn.microsoft.com/en-us/dotnet/standard/events/ , https://www.c-sharpcorner.com/blogs/delegateinc-sharp-in-a-simple-way
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
