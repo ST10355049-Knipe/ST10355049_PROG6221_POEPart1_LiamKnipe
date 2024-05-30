@@ -1,4 +1,4 @@
-# ST10355049_PROG6221_POEPart1_LiamKnipe
+# ST10355049_PROG6221_POEPart2_LiamKnipe
 
 # Recipe Manager
 The Recipe Manager is a console application built using the C# that allows users to manage recipes. The application provides the following key features:
