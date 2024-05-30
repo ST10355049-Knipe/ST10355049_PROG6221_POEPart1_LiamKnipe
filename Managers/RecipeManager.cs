@@ -574,7 +574,7 @@ namespace ST10355049_PROG6221_POEPart2_LiamKnipe.Managers
 
 
         // The HandleExceededCalories method handles the OnExceededCalories event.
-        private void HandleExceededCalories(string message)
+        public void HandleExceededCalories(string message)
         {
             Console.WriteLine(message);
         }
